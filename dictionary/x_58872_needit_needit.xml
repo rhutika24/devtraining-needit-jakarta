@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" sizeclass="3" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" default="Legal" label="Request Type" mandatory="true" max_length="40" name="u_choice_1" type="string">
+            <choice>
+                <element label="Human Resource" sequence="0" value="HR"/>
+                <element label="Legal" sequence="1" value="Legal"/>
+                <element label="Facilities" sequence="2" value="Facilities"/>
+                <element label="Your Department Choice" sequence="3" value="Your_Choice"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" default=" Legal 1  " label="What Needed" max_length="40" name="u_choice_2" type="string">
+            <choice>
+                <element label="Human Resources 1" sequence="0" value="HR 1"/>
+                <element label="Human Resources 2" sequence="1" value="HR 2"/>
+                <element label="Facilities 1" sequence="2" value="Facilities 1"/>
+                <element label="Facilities 2" sequence="3" value="Facilities 2"/>
+                <element label="Legal 1" sequence="4" value=" Legal 1"/>
+                <element label="Legal 2" sequence="5" value=" Legal 2"/>
+            </choice>
+        </element>
+        <element label="When /needed" mandatory="true" max_length="40" name="u_glide_date_time_1" type="glide_date_time"/>
+        <element label="Requested For" max_length="32" name="u_reference_2" reference="cmdb_ci_appl_dot_net" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Additional Comments" max_length="125" name="u_string_3" type="string"/>
+    </element>
+</database>
